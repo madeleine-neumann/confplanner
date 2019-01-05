@@ -4,6 +4,6 @@ class CompaniesController < ApplicationController
   end
 
   def show
-    @company = Company.includes(:company_contacts).find(params[:id])
+    @company = Company.includes(:company_contacts, :sponsorings).find(params[:id])
   end
 end

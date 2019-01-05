@@ -9,3 +9,12 @@
     <br>
   <% end %>
 <% end %>
+<br>
+<h2>Sponsoring Packages</h2>
+<% if @company.company_contacts.present? %>
+  <% @company.sponsorings.each do |package| %>
+   <%= package.name %>
+   <%= package.net_price %>
+   <%= package.description%>
+  <% end %>
+<% end %>
