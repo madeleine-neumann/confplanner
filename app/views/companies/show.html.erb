@@ -1,1 +1,11 @@
-<%= @company.name %>
+<h1><%= @company.name %></h1>
+<h2>Given Contacts</h2>
+<% if @company.company_contacts.present? %>
+  <% @company.company_contacts.each do |contact| %>
+    <%= contact.firstname %>
+    <%= contact.lastname %>
+    <%= contact.phone %>
+    <%= contact.email %>
+    <br>
+  <% end %>
+<% end %>
