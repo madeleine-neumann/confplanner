@@ -1,0 +1,8 @@
+<h1>Hello World</h1>
+<% @companies.each do |company| %>
+  <%= company.name %>
+  <%= company.street %>
+  <%= company.postal_code %>
+  <%= company.city %>
+  <%= link_to "Go to details", company_path(company) %>
+<% end %>
