@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :companies, only:[:index, :show]
+  resources :companies, only: [:index, :show]
+  resources :todos
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
