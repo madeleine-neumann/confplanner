@@ -7,6 +7,7 @@ end
 
 # Added Projectgems
 gem 'rails_admin', '~> 1.3'
+gem 'carrierwave', '~> 1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
