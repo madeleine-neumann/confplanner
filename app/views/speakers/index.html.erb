@@ -1,0 +1,8 @@
+<h1>Speakers</h1>
+<% if @speakers.present? %>
+  <% @speakers.each do |speaker| %>
+    <%= speaker.firstname %>
+    <%= speaker.lastname %>
+    <%= link_to "Go to Speaker details", speaker_path(speaker) %>
+  <% end %>
+<% end %>
