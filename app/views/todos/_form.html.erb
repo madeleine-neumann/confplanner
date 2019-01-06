@@ -22,13 +22,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :company_id %>
-    <%= form.collection_select :company_id, @companies, :id, :name, include_blank: true %>
+    <%= form.label :due_at %>
+    <%= form.date_field :due_at, id: :todo_due_at %>
   </div>
 
   <div class="field">
-    <%= form.label :archived %>
-    <%= form.check_box :archived, id: :todo_archived %>
+    <%= form.label :company_id %>
+    <%= form.collection_select :company_id, @companies, :id, :name, include_blank: true %>
   </div>
 
   <div class="actions">

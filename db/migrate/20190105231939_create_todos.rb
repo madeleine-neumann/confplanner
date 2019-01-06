@@ -5,7 +5,7 @@ class CreateTodos < ActiveRecord::Migration[5.1]
       t.text :description
       t.date :due_at
       t.integer :company_id
-      t.boolean :archived
+      t.boolean :archived, null: false, default: false
 
       t.timestamps
     end

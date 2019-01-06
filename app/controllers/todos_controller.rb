@@ -4,7 +4,7 @@ class TodosController < ApplicationController
   def index
     @todos = Todo.all
     @todo = Todo.new
-    @companies = Company.all
+    @companies = Company.all.order("name ASC")
   end
 
   def show
@@ -56,6 +56,6 @@ class TodosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def todo_params
-      params.require(:todo).permit(:title, :description, :company_id, :archived)
+      params.require(:todo).permit(:title, :description, :company_id, :archived, :due_at)
     end
 end
