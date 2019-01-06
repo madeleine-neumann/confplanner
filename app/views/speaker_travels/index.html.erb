@@ -1,0 +1,17 @@
+<h1>Speaker Travels</h1>
+
+<% @travels.each do |travel| %>
+
+  <%= travel.speaker.firstname %>
+  <%= travel.speaker.lastname %>
+  <span>Comes from: </span>
+  <%= travel.comes_from %>
+  <span>Goes back to: </span>
+  <%= travel.goes_back_to %>
+  <span>Start: </span>
+  <%= travel.journey_start %>
+  <span>Heading back on:</span>
+  <%= travel.went_back %>
+  <span>Hotel Name:</span>
+  <%= travel.hotel.name %>
+<% end %>

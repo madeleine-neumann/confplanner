@@ -6,6 +6,7 @@ class CreateSpeakerTravels < ActiveRecord::Migration[5.1]
       t.date :journey_start
       t.date :went_back
       t.integer :speaker_id
+      t.integer :hotel_id
 
       t.timestamps
     end
